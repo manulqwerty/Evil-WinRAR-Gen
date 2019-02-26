@@ -3,6 +3,9 @@
  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://raw.githubusercontent.com/master/LICENSE) [![Twitter](https://img.shields.io/badge/twitter-@manulqwerty-blue.svg)](https://twitter.com/manulqwerty) 
 
 Generator of malicious Ace files for WinRAR &lt; 5.70 beta 1
+
+Vulnerability by [research.checkpoint.com](https://research.checkpoint.com/extracting-code-execution-from-winrar/)
+
 **Developed by [@manulqwerty - IronHackers](https://ironhackers.es).**
 
 Usage
