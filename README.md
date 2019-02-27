@@ -32,7 +32,7 @@ You can download Evil-WinRAR-Generator by cloning the [Git](https://github.com/m
 	
 ```bash
 git clone https://github.com/manulqwerty/Evil-WinRAR-Gen.git
-cd Evil-WinRAR-Gen && pip install -r requirements.txt
+cd Evil-WinRAR-Gen && pip3 install -r requirements.txt
 chmod +x evilWinRAR.py
 ```
 	
