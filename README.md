@@ -52,3 +52,10 @@ Credits
 https://github.com/droe/acefile
 
 https://github.com/WyAtu/CVE-2018-20250
+
+**Colaborators:**
+
+[cybervaca]
+
+<!-- Github URLs -->
+[cybervaca]: https://github.com/cybervaca
